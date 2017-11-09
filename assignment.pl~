@@ -7,8 +7,8 @@ isElementInList(El,[_|T]):-
 %Definitions for reverseList(List, ReversedList)
 reverseList([],[]).  %reverse of empty is empty - base case
 reverseList([H|T],[RL]):-
-    reverseList(T,RT),
-    RL=[RT|H].
+    reverseList(T,RevT),
+    RL=[RevT|H].
 
 %Definitions for mergeLists(List1, List2, Merged)
 mergeList([],L2,L2).
